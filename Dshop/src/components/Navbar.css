@@ -1,0 +1,66 @@
+/* manrope-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Manrope/static/Manrope-Regular.ttf') format('trueType'); 
+}
+/* manrope-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('trueType'); 
+}
+/* manrope-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf') format('trueType'); 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.nav-izq {
+    margin-left: 25px;
+}
+
+.nav-izq h2 {
+    font-family: 'Manrope';
+    font-weight: 600;
+}
+
+
+.nav-center {
+    display: flex;
+}
+
+.nav-center p {
+    margin-left: 28px;
+    margin-right: 28px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-der {
+    margin-right: 25px;
+    display: flex;
+}
+
+.cart {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.prof {
+    margin-right: 20px;
+    cursor: pointer;
+}

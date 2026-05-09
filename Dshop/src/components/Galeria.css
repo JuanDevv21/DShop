@@ -1,0 +1,77 @@
+/* manrope-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Manrope/static/Manrope-Regular.ttf') format('trueType'); 
+}
+/* manrope-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('trueType'); 
+}
+/* manrope-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf') format('trueType'); 
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    margin-left: 85px;
+}
+
+.galeria-title {
+    font-family: 'Manrope';
+}
+
+.galeria-sub {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Manrope';
+    align-items: center;
+}
+
+.galeria-sub div {
+    display: flex;
+    align-items: center;
+    margin-right: 85px;
+}
+
+.galeria-sub div p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.filter {
+  cursor: pointer;
+}
+
+.filter p {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+}
+
+.filter p:hover {
+  color: #0047FF;
+}
+
+.filter p.active {
+  font-weight: 800;
+  text-decoration: underline;
+  color: #0047FF;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+}
