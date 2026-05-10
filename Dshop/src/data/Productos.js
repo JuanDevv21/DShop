@@ -11,15 +11,15 @@ import bapestablanca from "../assets/bapestablanca.png"
 
 const Productos = [
     {id: 11, marca: "Nike", nombre: "AirForce One", precio: "310.000", imagen: AirForceOne},
-    {id: 12, marca: "Nike", nombre: "Jordan 1", precio: "567.000", imagen: jordan1white},
-    {id: 13, marca: "Nike", nombre: "Jordan IV", precio: "520.000", imagen: jordan4white},
-    {id: 14, marca: "Nike", nombre: "Dunk Travis Scott", precio: "1'240.000", imagen: travissScott},
+    {id: 12, marca: "Nike", nombre: "Jordan 1 Retro Mid-White", precio: "567.000", imagen: jordan1white},
+    {id: 13, marca: "Nike", nombre: "Jordan 4 Retro Figth Club", precio: "520.000", imagen: jordan4white},
+    {id: 14, marca: "Nike", nombre: "Jordan 1 Low Travis Scott", precio: "1'240.000", imagen: travissScott},
     {id: 21, marca: "Adidas", nombre: "Yeezy Slides", precio: "160.000", imagen: yeezySlides},
-    {id: 22, marca: "Adidas", nombre: "Samba", precio: "435.000", imagen: samba},
-    {id: 23, marca: "Adidas", nombre: "Campus Negras", precio: "600.000", imagen: campusNegras},
-    {id: 31, marca: "Bape", nombre: "Bapesta Panda", precio: "230.000", imagen: bapestapanda},
-    {id: 32, marca: "Bape", nombre: "Bapesta ft Kanye West", precio: "1'100.000", imagen: bapestakanye},
-    {id: 33, marca: "Bape", nombre: "Bapesta Basica", precio: "210.000", imagen: bapestablanca}
+    {id: 22, marca: "Adidas", nombre: "Adidas Samba OG", precio: "435.000", imagen: samba},
+    {id: 23, marca: "Adidas", nombre: "Adidas Campus Negras", precio: "600.000", imagen: campusNegras},
+    {id: 31, marca: "Bape", nombre: "Bapesta OS Panda", precio: "230.000", imagen: bapestapanda},
+    {id: 32, marca: "Bape", nombre: "Bapesta OS Kanye West", precio: "1'100.000", imagen: bapestakanye},
+    {id: 33, marca: "Bape", nombre: "Bapesta OS M2 White", precio: "210.000", imagen: bapestablanca}
 ]
 
 export default Productos

@@ -2,14 +2,16 @@ import React from "react";
 import "./Navbar.css"
 import ProfileUser from "./UserProfileSVG";
 import Cart from "./Cart";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
     return (
         <nav className="nav">
             <div className="nav-izq"><h2>Dshop</h2></div>
             <div className="nav-center">
-                <a><p>Store</p></a>
-                <a><p>Tracking</p></a>
+                <Link to="/"><p className="act">Store</p></Link>
+                <Link to="/Tracking"><p>Tracking</p></Link>
                 <a><p>Dashboard</p></a>
                 <a><p>Logistica</p></a>
             </div>

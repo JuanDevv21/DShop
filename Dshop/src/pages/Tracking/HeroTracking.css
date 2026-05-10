@@ -1,0 +1,105 @@
+/* manrope-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../assets/fonts/Manrope/static/Manrope-Regular.ttf') format('trueType'); 
+}
+/* manrope-600 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('trueType'); 
+}
+/* manrope-800 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf') format('trueType'); 
+}
+
+.hero-tracking {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope';
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.hero-sub {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: #0052FF;
+    font-weight: 800;
+    font-size: 18px;
+
+}
+
+.hero-tit {
+    width: 700px;
+    font-size: 50px;
+    font-weight: 800;
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hero-tit h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero-find {
+    margin-top: 30px;
+    width: 700px;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+.hero-find img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.hero-find input {
+    width: 450px;
+    margin-left: 10px;
+    font-size: 18px;
+    height: 50px;
+    background-color: rgb(201, 201, 201);
+    border: 1px solid rgb(201, 201, 201);
+    outline: none;
+}
+
+.hero-find input::placeholder {
+    padding-left: 3px;
+    background-color: rgb(201, 201, 201);
+}
+
+.hero-find div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    background-color: #0052FF;
+    color: white;
+    margin-right: 20px;
+}
+
+.hero-find p {
+    letter-spacing: 2px;
+}

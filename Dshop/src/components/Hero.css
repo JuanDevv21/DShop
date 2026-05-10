@@ -1,26 +1,26 @@
 /* manrope-regular - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/Manrope/static/Manrope-Regular.ttf') format('trueType'); 
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/Manrope/static/Manrope-Regular.ttf') format('trueType'); 
 }
 /* manrope-600 - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('trueType'); 
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('trueType'); 
 }
 /* manrope-800 - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf') format('trueType'); 
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf') format('trueType'); 
 }
 
 .hero {
@@ -97,4 +97,5 @@
     width: 1200px;
     height: 850px;
 }
+
 

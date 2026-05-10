@@ -1,15 +1,19 @@
 import React from "react"
 import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Galeria from "./components/Galeria"
-import ProductCard from "./components/ProductCard"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./pages/Home/Home"
+import Tracking from "./pages/Tracking/Tracking";
 
 const App = () => {
   return (
     <>
-    <Navbar></Navbar>
-    <Hero></Hero>
-    <Galeria></Galeria>
+    <Router>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/Tracking" element={<Tracking/>}></Route>
+      </Routes>
+    </Router>
   </>
   )
 }

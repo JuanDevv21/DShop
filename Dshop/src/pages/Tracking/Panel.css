@@ -1,0 +1,150 @@
+/* manrope-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/Manrope/static/Manrope-Regular.ttf') format('trueType'); 
+}
+/* manrope-600 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('trueType'); 
+}
+/* manrope-800 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf') format('trueType'); 
+}
+
+.panel {
+    display: flex;
+    font-family: 'Manrope';
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.panel-izq {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-izq1 {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.panel-izq11 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.leter {
+    border: 1px solid rgb(171, 185, 216);
+    padding: 10px;
+    background-color: rgb(171, 185, 216);
+    color: rgb(30, 49, 133);
+    font-weight: 600;
+}
+
+.panel-izq12 {
+    font-size: 28px;
+    width: 300px;
+    margin-left: 40px;
+    line-height: 1.2;
+    margin-top: 0px;
+}
+
+.panel-izq13 {
+    width: 600px;
+    object-fit: contain;
+}
+
+.panel-izq13 img {
+    width: 520px;
+    margin-left: 40px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 10px;
+}
+
+.panel-izq14 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.panel-izq14 div {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.det {
+    font-weight: 800;
+}
+
+
+.panel-izq2 {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.panel-izq2 div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.panel-izq2 img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.panel-izq2 div p {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.panel-izq2 div span {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.panel-der {
+    margin-left: 80px;
+}
+
+.journey {
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.journey p {
+    margin-top: 0px;
+}
+
+.tt {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
