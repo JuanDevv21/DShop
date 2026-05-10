@@ -1,5 +1,6 @@
 import React from "react";
 import "./PiePagina.css"
+import {Link} from "react-router-dom"
 
 const PiePagina = () => {
     return (
@@ -15,7 +16,7 @@ const PiePagina = () => {
                 <input
                 type="text"
                 placeholder="INGRESE LA GUIA DE SU PEDIDO"></input>
-                <a><p>TRACK SHIPMENT</p></a>
+                <Link to="/Tracking"><p>TRACK SHIPMENT</p></Link>
             </div>
             <div className="contenedor4">
                 <div>

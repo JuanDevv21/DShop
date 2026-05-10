@@ -2,7 +2,8 @@ import React from "react";
 import "./HeroTracking.css"
 import busqueda from "../../assets/svg/search-alt.svg"
 
-const HeroTracking = () => {
+const HeroTracking = ({numGuia, setNumGuia, onBuscar}) => {
+
     return (
         <>
             <div className="hero-tracking">
@@ -12,8 +13,12 @@ const HeroTracking = () => {
                     <img src={busqueda}></img>
                     <input
                     placeholder="Ingrese la guia de su pedido"
-                    type="text"></input>
-                    <div><p>FIND ORDER</p></div>
+                    type="text"
+                    value={numGuia}
+                    onChange={(e) => setNumGuia(e.target.value)}></input>
+                    <div onClick={() => {console.log("Botón presionado con guía:", numGuia); onBuscar();}}>
+                        <p>FIND ORDER</p>
+                    </div>
                 </div>
             </div>
         </>

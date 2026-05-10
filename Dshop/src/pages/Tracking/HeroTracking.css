@@ -69,6 +69,10 @@
     border-radius: 5px;
 }
 
+.hero-find div {
+    cursor: pointer;
+}
+
 .hero-find img {
     width: 30px;
     height: 30px;

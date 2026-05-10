@@ -1,9 +1,9 @@
 import React from "react";
 import "./Panel.css"
-import BadBunny from "../../assets/badbunny.png"
 import Camion from "../../assets//svg/truck.svg"
 
-const Panel = () => {
+const Panel = ({orden}) => {
+
     return (
         <>
             <div className="panel">
@@ -16,24 +16,24 @@ const Panel = () => {
                         <div className="panel-izq12">
                             <h2>Despacho de aduanas</h2></div>
                         <div className="panel-izq13">
-                            <img src={BadBunny}></img>
+                            <img src={orden.imagen}></img>
                         </div>
                         <div className="panel-izq14">
                             <div className="desc1">
                                 <p>Producto</p>
-                                <p className="det">Adidas BadBunny Paso Fino</p>
+                                <p className="det">{orden.producto}</p>
                             </div>
                             <div className="desc2">
                                 <p>ID Orden</p>
-                                <p className="det">DS-0010-A-26</p>
+                                <p className="det">{orden.guia}</p>
                             </div>
                             <div className="desc3">
                                 <p>Est. Entrega</p>
-                                <p className="det">Nov 14, 2025</p>
+                                <p className="det">{orden.entrega}</p>
                             </div>
                             <div className="desc4">
                                 <p>Enviado desde</p>
-                                <p className="det">Portland, OR-USA</p>
+                                <p className="det">{orden.origen}</p>
                             </div>
                         </div>
                     </div>
