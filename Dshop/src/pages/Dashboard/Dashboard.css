@@ -1,0 +1,119 @@
+/* manrope-regular - latin */
+@font-face {
+    ont-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/Manrope/static/Manrope-Regular.ttf') format('trueType'); 
+}
+/* manrope-600 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('trueType'); 
+}
+/* manrope-800 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf') format('trueType'); 
+}
+
+.login {
+    font-family: 'Manrope';
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    border-top:4px solid rgb(172, 172, 172);
+    border-bottom: 4px solid rgb(172, 172, 172);
+    width: 500px;
+    border-radius: 20px;
+}
+
+.log1 {
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.log2 {
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.log2 span {
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.log2 input {
+    margin-top: 4px;
+    height: 40px;
+    border: 1px solid rgb(201, 201, 201);  
+    outline: none;
+    font-family: "Manrope";
+}
+
+.log2 input::placeholder {
+    font-family: 'Manrope';
+}
+
+.log11 {
+    display: flex;
+}
+
+.log11 p {
+    margin-left: 5px;
+}
+
+.log12 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.log12 p {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.ft {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Manrope';
+    margin-top: 147px;
+}
+
+.ft1 {
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.ft2 {
+    display: flex;
+    margin-right: 40px;
+}
+
+.ft2 p {
+    margin-left: 20px;
+}
