@@ -6,6 +6,7 @@ import Truck from "../../assets/svg/truckb.svg"
 import Clover from "../../assets/svg/clover.svg"
 import helpCircle from "../../assets/svg/help-circle.svg"
 import Gear from "../../assets/svg/gear.svg"
+import OrderTrendsChart from "./Grafico";
 
 const AdminDashboard = () => {
     return (
@@ -44,7 +45,32 @@ const AdminDashboard = () => {
                 </div>
             </div>
             <div className="menu-der">
+                <div className="menu-d1">
+                    <div className="blo">
+                        <p>ORDENES HOY</p>
+                        <h2>1,284</h2>
+                        <p>+12,4% Vs ayer</p>
+                    </div>
+                    <div className="blo">
+                        <p>ITEMS EN TRANSITO</p>
+                        <h2>8,432</h2>
+                        <p>422 Despachados</p>
+                    </div>
+                    <div className="blo3">
+                        <p>ENVIOS PENDIENTES</p>
+                        <h2>14</h2>
+                        <p>3 items requieren revision urgente</p>
+                    </div>
+                </div>
+                <div className="menu-d2">
+                    <div>
 
+                    </div>
+                    <div>
+                        <OrderTrendsChart></OrderTrendsChart>
+                    </div>
+                </div>
+                <div className="menu-d3">Hola</div>
             </div>
         </div>
     )
