@@ -1,5 +1,6 @@
 import React from "react";
 import "./Dashboard.css"
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
     return (
@@ -24,7 +25,7 @@ const Dashboard = () => {
                         <p>Mantener sesion iniciada</p>
                     </div>
                     <div className="log12">
-                        <p>INICIAR SESION</p>
+                        <Link to="/AdminDashboard"><p>INICIAR SESION</p></Link>
                     </div>
                 </div>
                 </div>
