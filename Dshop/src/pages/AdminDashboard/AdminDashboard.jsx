@@ -62,15 +62,29 @@ const AdminDashboard = () => {
                         <p>3 items requieren revision urgente</p>
                     </div>
                 </div>
-                <div className="menu-d2">
-                    <div>
+                <div className="menu-der2">
+                    <div className="menu-dizq">
+                        <div className="menu-dizq1">
+                            <div className="md1">
+                                <p>ANALITICAS DE RENDIMIENTO</p>
+                                <h2>Volumen de ordenes</h2>
+                            </div>
+                            <div className="yu">
+                                <p className="ac">SEMANALMENTE</p>
+                                <p>MENSUALMENTE</p>
+                            </div>
+                        </div>
+                        <div className="menu-dizq2">
+                            GRAFICA
+                        </div>
+                    </div>
+
+
+
+                    <div className="menu-dder">
 
                     </div>
-                    <div>
-                        <OrderTrendsChart></OrderTrendsChart>
-                    </div>
                 </div>
-                <div className="menu-d3">Hola</div>
             </div>
         </div>
     )

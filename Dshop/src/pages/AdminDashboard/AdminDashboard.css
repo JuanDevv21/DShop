@@ -120,8 +120,49 @@
     color: blue;
 }
 
+.menu-der2 {
 
-.menu-d2 {
-    border: 1px solid red;
     margin-top: 60px;
+    display: flex;
+    margin-left: 40px;
+}
+
+.menu-dizq {
+
+    width: 60%;
+}
+
+.menu-dizq1 {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.md1 p {
+    font-size: 18px;
+}
+
+.menu-dizq div h2 {
+    font-size: 26px;
+}
+
+.yu {
+    display: flex;
+}
+
+.yu p {
+    border: 1px solid rgb(175, 173, 173);
+    width: 170px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.ac { 
+    background-color: blue;
+    color: white;
 }
