@@ -31,7 +31,7 @@
 .menu-izq {
     border-right: 1px solid rgb(184, 183, 183);
     width: 400px;
-    height: 830px;
+    height: 1130px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,8 +120,94 @@
     color: blue;
 }
 
-
-.menu-d2 {
-    border: 1px solid red;
+.menu-der2 {
     margin-top: 60px;
+    display: flex;
+    margin-left: 40px;
+}
+
+.menu-dizq {
+    width: 60%;
+}
+
+.menu-dizq1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.md1 p {
+    font-size: 18px;
+}
+
+.menu-dizq div h2 {
+    font-size: 26px;
+}
+
+.yu {
+    display: flex;
+}
+
+.yu p {
+    border: 1px solid rgb(175, 173, 173);
+    width: 170px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.ac { 
+    background-color: blue;
+    color: white;
+}
+
+.menu-dder {
+    margin-left: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logisticabloq {
+    display: flex;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.logisticabloq div img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.inf {
+    margin-left: 10px;
+}
+
+.inf p {
+    margin: 0px;
+    font-weight: 800;
+}
+
+.fae {
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 18px;
+    height: 50px;
+    cursor: pointer;
+    color: gray;
+}
+
+.menu-der3 {    margin-left: 40px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.it {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
