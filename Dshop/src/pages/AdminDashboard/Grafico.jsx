@@ -1,5 +1,5 @@
-import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
+import React, { useState, useMemo } from 'react';
+import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 const data = [
     { name: 'LUNES', value: 400 },
@@ -14,8 +14,26 @@ const data = [
 const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
     return (
-        <div style={{ backgroundColor: '#111', color: '#fff', padding: '5px 10px', borderRadius: '4px', fontSize: '12px' }}>
+        <div style={{ 
+        backgroundColor: '#111', 
+        color: '#fff', 
+        padding: '5px 10px', 
+        borderRadius: '4px', 
+        fontSize: '12px',
+        position: 'relative',
+        }}>
         {payload[0].value}
+        <div style={{
+            position: 'absolute',
+            bottom: '-5px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '0',
+            height: '0',
+            borderLeft: '5px solid transparent',
+            borderRight: '5px solid transparent',
+            borderTop: '5px solid #111'
+        }}></div>
         </div>
     );
     }
@@ -23,6 +41,15 @@ const CustomTooltip = ({ active, payload }) => {
 };
 
 const OrderTrendsChart = () => {
+    const [hoverIndex, setHoverIndex] = useState(null);
+
+  // 1.Funcion para encontrar el indice de mayor valor
+    const maxIndex = useMemo(() => {
+    const values = data.map(d => d.value);
+    const max = Math.max(...values);
+    return data.findIndex(d => d.value === max);
+    }, []);
+
     return (
     <div style={{ width: '95%', height: 300, background: '#fff', padding: '20px' }}>
         <ResponsiveContainer width="100%" height="100%">
@@ -39,13 +66,20 @@ const OrderTrendsChart = () => {
             cursor={{ fill: 'transparent' }} 
             active={true} 
             />
-            <Bar dataKey="value" radius={[2, 2, 0, 0]}>
-            {data.map((entry, index) => (
-                <Cell 
-                key={`cell-${index}`} 
-                fill={entry.highlighted ? '#0044cc' : entry.active ? '#0066ff' : '#f0f0f0'} 
+            <Bar dataKey="value" radius={[4, 4, 0, 0]}>
+            {data.map((entry, index) => {
+              // 2. Pone azul la columna del indice mas alto
+                const isMax = index === maxIndex;
+                const isHovered = index === hoverIndex;
+                
+                return (
+                <Cell
+                    key={`cell-${index}`} 
+                    fill={isMax || isHovered ? '#0066ff' : '#f0f0f0'} 
+                    style={{ transition: 'fill 0.2s ease' }}
                 />
-            ))}
+                );
+            })}
             </Bar>
         </BarChart>
         </ResponsiveContainer>
@@ -53,4 +87,4 @@ const OrderTrendsChart = () => {
     );
 };
 
-export default OrderTrendsChart
+export default OrderTrendsChart;
